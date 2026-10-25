@@ -188,7 +188,7 @@ body[data-theme="dark"] .brand-mark {
 
 .download-btn {
   height: 40px;
-  padding: 0 20px;
+  padding: 0 14px;
   background: var(--accent);
   color: #FFF;
   border-color: transparent;
@@ -407,6 +407,12 @@ body[data-theme="dark"] .theme-btn .icon-sun {
   margin-bottom: 30px;
 }
 
+.section-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .section-heading h2 {
   margin: 0;
   font-family: 'Cormorant Garamond', Georgia, serif;
@@ -556,6 +562,17 @@ body[data-theme="dark"] .theme-btn .icon-sun {
 }
 
 @media (max-width: 768px) {
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .section-controls {
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     text-align: center;

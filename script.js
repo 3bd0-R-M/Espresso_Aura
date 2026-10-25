@@ -15,7 +15,7 @@ const translations = {
     langToggle: 'EN',
     grid: 'شبكة',
     list: 'قائمة',
-    downloadPdf: 'تحميل الكتالوج (PDF)'
+    downloadPdf: 'تحميل (PDF)'
   },
   en: {
     eyebrow: 'PREMIUM COFFEE EXPERIENCE',
@@ -33,7 +33,7 @@ const translations = {
     langToggle: 'AR',
     grid: 'Grid',
     list: 'List',
-    downloadPdf: 'Download PDF'
+    downloadPdf: 'Download (PDF)'
   }
 };
 
@@ -346,7 +346,8 @@ function renderProducts() {
       const name = product.name[state.lang];
       const description = product.description[state.lang];
       const category = product.category[state.lang];
-      const price = `${product.price} ر.س`;
+      const currency = state.lang === 'ar' ? 'ر.س' : 'SAR';
+      const price = `${product.price} ${currency}`;
       const fallbackSrc = getFallbackSVG(name);
 
       return `

@@ -52,10 +52,6 @@
             <span class="icon-sun">☀</span>
             <span class="icon-moon">☾</span>
           </button>
-          <div class="view-toggle">
-            <button class="view-btn is-active" data-view="grid" type="button" data-i18n="grid">شبكة</button>
-            <button class="view-btn" data-view="list" type="button" data-i18n="list">قائمة</button>
-          </div>
           <button id="downloadPdfBtn" class="download-btn glow-btn" type="button" data-i18n="downloadPdf">
             تحميل الكتالوج (PDF)
           </button>
@@ -134,7 +130,13 @@
               <p class="eyebrow" data-i18n="ourMenu">قائمة المشروبات</p>
               <h2 data-i18n="catalogTitle">مجموعتنا المختارة</h2>
             </div>
-            <div class="section-badge" data-i18n="freshRoasted">محمصة حديثاً</div>
+            <div class="section-controls">
+              <div class="section-badge" data-i18n="freshRoasted">محمصة حديثاً</div>
+              <div class="view-toggle" aria-label="Product view">
+                <button class="view-btn is-active" data-view="grid" type="button" data-i18n="grid">شبكة</button>
+                <button class="view-btn" data-view="list" type="button" data-i18n="list">قائمة</button>
+              </div>
+            </div>
           </div>
 
           <div id="catalogGrid" class="catalog-grid" aria-live="polite"></div>
