@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espresso Aura | الكتالوج الرقمي</title>
+    <meta
+      name="description"
+      content="كتالوج رائع وأنيق لقهوة Espresso Aura والقهوة المختصة"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <!-- الشريط العلوي -->
+      <header class="topbar glow-effect">
+        <div class="brand-wrap">
+          <div class="brand-mark" aria-label="Espresso Aura Logo">
+            <!-- شعار حبة القهوة الأنيق -->
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M32 8C18.745 8 8 18.745 8 32C8 45.255 18.745 56 32 56C45.255 56 56 45.255 56 32C56 18.745 45.255 8 32 8ZM32 50C22.075 50 14 41.925 14 32C14 22.075 22.075 14 32 14C41.925 14 50 22.075 50 32C50 41.925 41.925 50 32 50Z"
+                fill="currentColor"
+                opacity="0.15"
+              />
+              <path
+                d="M20 32C20 20 32 12 32 12C32 12 28 22 34 32C40 42 32 52 32 52C32 52 20 44 20 32Z"
+                fill="currentColor"
+              />
+              <path
+                d="M44 32C44 44 32 52 32 52C32 52 36 42 30 32C24 22 32 12 32 12C32 12 44 20 44 32Z"
+                fill="currentColor"
+                opacity="0.75"
+              />
+            </svg>
+          </div>
+          <div class="brand-copy">
+            <span class="brand-name">Espresso Aura</span>
+            <span class="brand-tag">Coffee House</span>
+          </div>
+        </div>
+
+        <nav class="nav-actions" aria-label="Controls">
+          <button id="langToggle" class="action-btn" type="button">EN</button>
+          <button id="themeToggle" class="action-btn theme-btn" type="button" aria-label="تغيير الثيم">
+            <span class="icon-sun">☀</span>
+            <span class="icon-moon">☾</span>
+          </button>
+          <div class="view-toggle">
+            <button class="view-btn is-active" data-view="grid" type="button" data-i18n="grid">شبكة</button>
+            <button class="view-btn" data-view="list" type="button" data-i18n="list">قائمة</button>
+          </div>
+          <button id="downloadPdfBtn" class="download-btn glow-btn" type="button" data-i18n="downloadPdf">
+            تحميل الكتالوج (PDF)
+          </button>
+        </nav>
+      </header>
+
+      <main>
+        <!-- القسم الرئيسي (Hero Section) -->
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="eyebrow">تجربة قهوة فاخرة</p>
+            <h1 data-i18n="heroTitle">هدوء الصباح ونكهات صُممت بعناية.</h1>
+            <p class="lead" data-i18n="heroLead">
+              نختار أفضل حبوب القهوة ونحمصها بشغف لتستمتع بلمسة فريدة في كل كوب.
+            </p>
+            <div class="hero-cta">
+              <a href="#catalog" class="primary-btn glow-btn" data-i18n="shopNow">استكشف القائمة</a>
+              <a
+                id="whatsappBtn"
+                class="ghost-btn whatsapp-btn"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="reserve"
+              >
+                تواصل معنا
+              </a>
+            </div>
+            <div class="stats-row">
+              <div class="stat">
+                <strong>20+</strong>
+                <span data-i18n="items">صنف مميز</span>
+              </div>
+              <div class="stat">
+                <strong>4.9</strong>
+                <span data-i18n="rating">تقييم الزوار</span>
+              </div>
+              <div class="stat">
+                <strong>100%</strong>
+                <span data-i18n="service">حبوب مختصة</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card main-card">
+              <div class="coffee-bean-hero">
+                <svg viewBox="0 0 100 100" class="hero-bean-icon">
+                  <path
+                    d="M50 10C30 10 15 28 15 50C15 72 30 90 50 90C70 90 85 72 85 50C85 28 70 10 50 10ZM50 82C35 82 23 68 23 50C23 32 35 18 50 18C65 18 77 32 77 50C77 68 65 82 50 82Z"
+                    fill="var(--primary)"
+                    opacity="0.2"
+                  />
+                  <path
+                    d="M32 50C32 32 50 20 50 20C50 20 44 35 53 50C62 65 50 80 50 80C50 80 32 68 32 50Z"
+                    fill="var(--primary)"
+                  />
+                  <path
+                    d="M68 50C68 68 50 80 50 80C50 80 56 65 47 50C38 35 50 20 50 20C50 20 68 32 68 50Z"
+                    fill="var(--accent)"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="floating-card">
+              <span class="label" data-i18n="signatureBlend">المحصول الأشهر</span>
+              <strong>Velvet Roast</strong>
+            </div>
+          </div>
+        </section>
+
+        <!-- قسم المنتجات -->
+        <section id="catalog" class="catalog-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow" data-i18n="ourMenu">قائمة المشروبات</p>
+              <h2 data-i18n="catalogTitle">مجموعتنا المختارة</h2>
+            </div>
+            <div class="section-badge" data-i18n="freshRoasted">محمصة حديثاً</div>
+          </div>
+
+          <div id="catalogGrid" class="catalog-grid" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
